@@ -11,6 +11,7 @@ namespace Cwiczenia2410
         protected string imie;
         protected string nazwisko;
         protected int rokUr;
+        private string miejsceZamieszkania;
 
         // konstruktor domyslny
         public Osoba()
@@ -32,5 +33,17 @@ namespace Cwiczenia2410
             Console.WriteLine("Imie i nazwisko: {0} {1}",imie, nazwisko);
             Console.WriteLine(rokUr);
         }
+
+        protected internal void ObliczWiek()
+        {
+            Console.WriteLine("Wiek: {0}", DateTime.Now.Year - rokUr);
+        }
+        
+        //metoda ustawiajaca miejsce zamieszkania
+        protected internal void UstawMiejsceZamieszkania(string miejsceZamieszkania)
+        {
+            this.miejsceZamieszkania=miejsceZamieszkania;
+        }
+        
     }
 }

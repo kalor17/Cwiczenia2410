@@ -16,6 +16,9 @@ namespace Cwiczenia2410
             student.WypiszInfo();
             osoba1.WypiszInfo();
             lukasz.WypiszInfo();
+            lukasz.ObliczWiek();
+            student.ObliczWiek();
+            student.UstawMiejsceZamieszkania("Olsztyn");
             Console.ReadKey();
 
         }
