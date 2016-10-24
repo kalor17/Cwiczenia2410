@@ -18,7 +18,7 @@ namespace Cwiczenia2410
             lukasz.WypiszInfo();
             lukasz.ObliczWiek();
             student.ObliczWiek();
-            student.UstawMiejsceZamieszkania("Olsztyn"); */
+            student.UstawMiejsceZamieszkania("Olsztyn");adasdas */
             
             Osoba student2 = new Student();
             student2.WypiszInfo();
