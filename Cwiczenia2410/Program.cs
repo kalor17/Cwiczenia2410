@@ -11,7 +11,10 @@ namespace Cwiczenia2410
         static void Main(string[] args)
         {
             Osoba lukasz = new Osoba("Lukasz", "Zakrzewski", 1994);
-            Console.WriteLine("a");
+            Osoba osoba1 = new Osoba();
+            Student student = new Student("Krzysiu","Wi",1997,3,5,134444);
+            student.WypiszInfo();
+            osoba1.WypiszInfo();
             lukasz.WypiszInfo();
             Console.ReadKey();
 

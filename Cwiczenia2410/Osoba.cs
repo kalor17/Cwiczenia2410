@@ -8,22 +8,29 @@ namespace Cwiczenia2410
 {
     class Osoba
     {
-        public string imie;
-        public string nazwisko;
-        public int rok;
+        protected string imie;
+        protected string nazwisko;
+        protected int rokUr;
 
-        public Osoba(string imie, string nazwisko, int rok)
+        // konstruktor domyslny
+        public Osoba()
+        {
+            imie = "Jan";
+            nazwisko = "Kowalski";
+            rokUr = 1996;
+        }
+
+        protected internal Osoba(string imie, string nazwisko, int rokUr)
         {
             this.imie = imie;
             this.nazwisko = nazwisko;
-            this.rok = rok;
+            this.rokUr = rokUr;
         }
 
-        public void WypiszInfo()
+        protected internal void WypiszInfo()
         {
-            Console.WriteLine(imie);
-            Console.WriteLine(nazwisko);
-            Console.WriteLine(rok);
+            Console.WriteLine("Imie i nazwisko: {0} {1}",imie, nazwisko);
+            Console.WriteLine(rokUr);
         }
     }
 }
