@@ -11,8 +11,10 @@ namespace Cwiczenia2410
         static void Main(string[] args)
         {
             Osoba lukasz = new Osoba("Lukasz", "Zakrzewski", 1994);
+            Console.WriteLine("a");
             lukasz.WypiszInfo();
             Console.ReadKey();
+
         }
     }
 }
