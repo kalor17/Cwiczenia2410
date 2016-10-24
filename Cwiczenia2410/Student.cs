@@ -12,6 +12,11 @@ namespace Cwiczenia2410
         private int numerGrupy;
         private int numerAlbumu;
 
+        //kons domyslny
+        public Student()
+        {
+
+        }
         public Student(string imie, string nazwisko, int rokUr, int rok, int numerGrupy, int numerAlbumu)
         {
             this.imie = imie;
